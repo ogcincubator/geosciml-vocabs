@@ -1,0 +1,99 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://resource.geosciml.org/classifier/cgi/waste-storage> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage> .
+
+<http://resource.geosciml.org/classifier/cgi/waste-storage/covered> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/covered> .
+
+<http://resource.geosciml.org/classifier/cgi/waste-storage/surface> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/surface> .
+
+<http://resource.geosciml.org/classifier/cgi/waste-storage/underground> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/underground> .
+
+<http://resource.geosciml.org/classifier/cgi/waste-storage/underwater> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/underwater> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> skos:exactMatch <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage> a skos:Collection ;
+    dcterms:provenance "The original vocbaulary - all its concepts"@en ;
+    skos:definition "All the Concepts in this vocabulary"@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/waste-storage> ;
+    skos:member <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/covered>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/surface>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/underground>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/underwater> ;
+    skos:prefLabel "Waste Storage - All Concepts"@en .
+
+<https://linked.data.gov.au/org/cgi-gtwg> a schema:Organization ;
+    skos:exactMatch <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:affiliation <https://linked.data.gov.au/org/cgi> ;
+    schema:name "CGI Geoscience Terminology Working Group" ;
+    schema:url "http://www.cgi-iugs.org/tech_collaboration/geoscience_terminology_working_group.html"^^xsd:anyURI .
+
+<https://linked.data.gov.au/org/cgi> a schema:Organization ;
+    skos:exactMatch <https://linked.data.gov.au/org/cgi> ;
+    schema:name "Commission for the Management and Application of Geoscience Information" ;
+    schema:url "http://www.cgi-iugs.org"^^xsd:anyURI .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/covered> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:broader <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/surface> ;
+    skos:definition "Covered mining waste storage at ground level"@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/waste-storage/covered> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:notation "01.1"^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "covered"@en .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/underground> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:definition "Mining waste storage at underground environment"@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/waste-storage/underground> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:notation "02"^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "underground"@en ;
+    skos:topConceptOf <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/underwater> a skos:Concept ;
+    dcterms:provenance "Australia GGIC"@en ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:definition "Mining waste deposited at sea or lake floor (e.g. sea bed mining)"@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/waste-storage/underwater> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:notation "03"^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "underwater"@en ;
+    skos:topConceptOf <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/surface> a skos:Concept ;
+    dcterms:provenance "This vocabulary"@en ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:definition "Mining waste storage at open-sky environment (ground level)"@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/waste-storage/surface> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:narrower <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/covered> ;
+    skos:notation "01"^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "surface"@en ;
+    skos:topConceptOf <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> .
+
+<https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage> a skos:ConceptScheme ;
+    dcterms:created "2016-11-29"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    dcterms:modified "2020-06-23"^^xsd:date ;
+    dcterms:provenance "The EarthResourceML standard"@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/cgi> ;
+    dcterms:source "https://earthresourceml.org"^^xsd:anyURI ;
+    skos:changeNote "2014-03-19 Original SKOS implementation, SMR"@en,
+        "2015-01-08 OLR Edits to fix typos and remove '201403' from rdf file name."@en,
+        "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions."@en,
+        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en ;
+    skos:definition "This file contains the CGI Waste Storage vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts for categorizing approaches to material waste storage associated with Earth Resource extraction. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
+    skos:editorialNote "This file contains the 2016 SKOS-RDF version of the CGI Waste Storage vocabulary. Compilation and review in Google doc spreadsheet; adopted June 2013 at GTWG face to face in St. Petersburg, Russia; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt"@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> ;
+    skos:hasTopConcept <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/surface>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/underground>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/waste-storage/underwater> ;
+    skos:prefLabel "Waste Storage"@en .
+
