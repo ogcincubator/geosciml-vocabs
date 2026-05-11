@@ -1,0 +1,158 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-expression> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression> .
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-expression/alteration-halo> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/alteration-halo> .
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-expression/botanical-anomaly> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/botanical-anomaly> .
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-expression/concealed> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/concealed> .
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/exposed> .
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geochemical-anomaly> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/geochemical-anomaly> .
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geophysical-anomaly> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/geophysical-anomaly> .
+
+<http://resource.geosciml.org/classifier/cgi/earth-resource-expression/gossan> skos:exactMatch <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/gossan> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> skos:exactMatch <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression> a skos:Collection ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:definition "All the Concepts in this vocabulary"@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/earth-resource-expression> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:member <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/alteration-halo>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/botanical-anomaly>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/concealed>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/exposed>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/geochemical-anomaly>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/geophysical-anomaly>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/gossan> ;
+    skos:prefLabel "Earth Resource Expression - All Concepts"@en ;
+    schema:citation "The original vocabulary - all its concepts"@en .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/alteration-halo> a skos:Concept ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:definition "The Earth resource, concealed or exposed, has an anomalous rock alteration halo."@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/alteration-halo> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:notation "03.."^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "alteration halo"@en ;
+    skos:topConceptOf <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/botanical-anomaly> a skos:Concept ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:altLabel "vegetation anomaly"@en ;
+    skos:definition "The Earth resource, concealed or exposed, has an anomalous botanical signature (eg, particular plant growth or absence of plants)."@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/botanical-anomaly> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:notation "06.."^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "botanical anomaly"@en ;
+    skos:topConceptOf <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/concealed> a skos:Concept ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:definition "The Earth resource is not exposed at the Earth's surface."@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/concealed> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:notation "02.."^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "concealed"@en ;
+    skos:topConceptOf <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/geochemical-anomaly> a skos:Concept ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:definition "The Earth resource, concealed or exposed, has an anomalous geochemical signature."@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geochemical-anomaly> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:notation "05.."^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "geochemical anomaly"@en ;
+    skos:topConceptOf <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/geophysical-anomaly> a skos:Concept ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:altLabel "geophysikalische Anomalie"@de,
+        "anomalía geofísica"@es,
+        "geofysikaalinen anomalia"@fi,
+        "anomalia geofisica"@it,
+        "anomaliya geofizicheskaya"@ru,
+        "geofysisk anomali"@sv ;
+    skos:definition "The Earth resource, concealed or exposed, has an anomalous geophysical signature."@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geophysical-anomaly> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:notation "04.."^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "geophysical anomaly"@en ;
+    skos:topConceptOf <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/gossan> a skos:Concept ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:altLabel "ゴッサン",
+        "eiserner Hut"@de,
+        "montera hierro"@es,
+        "rautahilkka"@fi,
+        "chapeau fer"@fr,
+        "tudung besi"@id,
+        "cappello di ferro"@it,
+        "焼け"@ja,
+        "hÁÚsan"@km,
+        "산화대"@ko,
+        "Á»ÈÂ¡¦§¾­"@lo,
+        "gosan"@ms,
+        "shlyapa zheleznaya"@ru,
+        "gossan"@sv,
+        "กอสแซน"@th,
+        "mũ sắt"@vi,
+        "铁帽"@zh ;
+    skos:broader <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/exposed> ;
+    skos:definition "The surface expression of the Earth Resource is as highly weathered (oxidized) outcrop."@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/gossan> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:notation "01.1.."^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "gossan"@en ;
+    schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en .
+
+<https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/exposed> a skos:Concept ;
+    rdfs:isDefinedBy <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:definition "The Earth resource is exposed at the Earth's surface."@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed> ;
+    skos:inScheme <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:narrower <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/gossan> ;
+    skos:notation "01.."^^<http://resource.geosciml.org/datatype/LocalHierarchyKey> ;
+    skos:prefLabel "exposed"@en ;
+    skos:topConceptOf <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    schema:citation "Australia/New Zealand Government Geoscience Information Committee (GGIC)"@en .
+
+<https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression> a skos:ConceptScheme ;
+    skos:changeNote "2014-02-23 SMR - Original compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard."@en,
+        "2016-07-15 OLR - Reformat SKOS for migration to new vocabulary server"@en,
+        "2020-06-23 NJC Added properties to ensure vocab matched Geoscience Australia's vocab profile (http://linked.data.gov.au/def/ga-skos-profile). Just annotation properties, no new content. Agents (creator/publisher) now not text but RDF resource. Dates (create/modified) derived from editorial notes & existing date properties."@en,
+        "2021-12-17 R.Heaven BGS Added prefLabel and altLabel in non English languages, obtained from previously determined alignments between @en labels in CGI and Multi-lingual Thesaurus of Geosciences (MulTG) and Asian Multi-lingual Thesaurus of Geosciences (AMTG). Note that specific language packs are required to render the fonts.  Known issues: @lo and @fi labels were incorrectly encoded in the digitised source datasets; they have been included regardless of this in case the encoding can be corrected."@en,
+        "2025-06-04 NJC Updates metadata to meet the VocPub 5.1 profile"@en ;
+    skos:definition "This scheme describes concepts for specifying the kinds of surface expression associated with an Earth Resource, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the \"expression\" property in EarthResourceML EarthResource elements."@en ;
+    skos:editorialNote "This file contains the 2016 version of CGI Earth Resource Expression Value Vocabulary. Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet, converted to SKOS-RDF using GSML_SKOS_fromXLS_2016.02.xslt, 2016-07-15."@en ;
+    skos:exactMatch <http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> ;
+    skos:hasTopConcept <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/alteration-halo>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/botanical-anomaly>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/concealed>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/exposed>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/geochemical-anomaly>,
+        <https://www.opengis.net/def/geosciml/classifier/cgi/earth-resource-expression/geophysical-anomaly> ;
+    skos:prefLabel "Earth Resource Expression"@en ;
+    schema:citation "https://earthresourceml.org"^^xsd:anyURI,
+        "The EarthResourceML standard"@en ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateCreated "2014-01-09"^^xsd:date ;
+    schema:dateModified "2025-06-04"^^xsd:date ;
+    schema:keywords <https://gcmd.earthdata.nasa.gov/kms/concept/e9f67a66-e9fc-435c-b720-ae32a2c3d8f5> ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/stable> .
+

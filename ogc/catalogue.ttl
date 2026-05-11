@@ -1,0 +1,76 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://resource.geosciml.org/cgi-vocabs> skos:exactMatch <https://www.opengis.net/def/geosciml/cgi-vocabs> .
+
+<https://www.opengis.net/def/geosciml/cgi-vocabs> a dcat:Catalog ;
+    dcterms:hasPart <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/alterationtype>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/boreholedrillingmethod>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/classification-method-used>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/commodity-code>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/compositioncategory>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/consolidationdegree>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/contacttype>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/conventioncode>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/deformationstyle>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/descriptionpurpose>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/determinationmethodorientation>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-expression>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-material-role>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/earth-resource-shape>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/end-use-potential>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/environmental-impact>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/eventenvironment>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/eventprocess>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/exploration-activity-type>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/exploration-result>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/faultmovementsense>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/faultmovementtype>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/faulttype>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/featureobservationmethod>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/foliationtype>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/geneticcategory>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/geologicunitmorphology>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/geologicunitpartrole>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/geologicunittype>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/lineationtype>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/metamorphicfacies>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/metamorphicgrade>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/mine-status>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/mineral-occurrence-type>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/mining-activity>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/mining-processing-activity>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/particleaspectratio>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/particleshape>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/particletype>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/proportionterm>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/raw-material-role>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/reserve-assessment-category>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/resource-assessment-category>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/simplelithology>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/stratigraphicrank>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/valuequalifier>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/vocabularyrelation>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.01/waste-storage>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2016.02/earth-resource-form>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2017.01/mappingframe>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2017.01/planarpolaritycode>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2019.01/unfc>,
+        <https://www.opengis.net/def/geosciml/classifierscheme/cgi/2023.11/mineral-deposit-model> ;
+    skos:exactMatch <http://resource.geosciml.org/cgi-vocabs> ;
+    skos:historyNote "This catalogue was was created in 2024 from pre-existing vocabularies"@en ;
+    skos:prefLabel "CGI Vocabularies" ;
+    schema:codeRepository "https://github.com/GeoscienceAustralia/cgi-vocabs" ;
+    schema:contributor <https://kurrawong.ai> ;
+    schema:creator <https://linked.data.gov.au/org/cgi-gtwg> ;
+    schema:dateCreated "2017"^^xsd:gYear ;
+    schema:dateModified "2024-12-30"^^xsd:date ;
+    schema:description "CGI's vocabularies of controlled terms" ;
+    schema:name "CGI Vocabularies" ;
+    schema:publisher <https://linked.data.gov.au/org/cgi> .
+
