@@ -7,7 +7,7 @@ import requests
 
 from rdflib import Graph, URIRef, Node, SKOS
 
-logger = logging.Logger(__name__)
+logger = logging.getLogger(__name__)
 
 UPSTREAM_DATA_DIR = Path('upstream/vocabularies')
 OGC_DATA_DIR = Path('ogc')
@@ -22,14 +22,19 @@ SPARQL_AUTH = ((os.environ['SPARQL_USERNAME'], os.environ.get('SPARQL_PASSWORD',
 
 
 def _main():
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
     all_g = Graph()
     for vocab in VOCABS:
         upstream_dir = UPSTREAM_DATA_DIR / vocab
         if not upstream_dir.exists():
-            logger.warning("%s does not exist", upstream_dir)
+            logger.warning("Upstream directory %s does not exist, skipping", upstream_dir)
             continue
 
-        for fn in upstream_dir.rglob('*.ttl'):
+        ttl_files = list(upstream_dir.rglob('*.ttl'))
+        logger.info("Processing vocab '%s': found %d TTL file(s)", vocab, len(ttl_files))
+
+        for fn in ttl_files:
+            logger.info("  Parsing %s", fn)
             g = Graph().parse(fn)
             new_g = Graph()
             for triple in g.triples((None, None, None)):
@@ -44,16 +49,21 @@ def _main():
             out_fn = OGC_DATA_DIR / fn.relative_to(UPSTREAM_DATA_DIR)
             out_fn.parent.mkdir(parents=True, exist_ok=True)
             new_g.serialize(destination=out_fn, format='turtle')
+            logger.info("  Written %d triples to %s", len(new_g), out_fn)
             for triple in new_g.triples((None, None, None)):
                 all_g.add(triple)
 
-    requests.put(
+    logger.info("Total triples across all vocabs: %d", len(all_g))
+    logger.info("Uploading graph to %s (graph URI: %s)", SPARQL_GSP_ENDPOINT, GRAPH_URI)
+    response = requests.put(
         SPARQL_GSP_ENDPOINT,
         params={'graph': GRAPH_URI},
         data=all_g.serialize(format='turtle'),
         headers={'Content-Type': 'text/turtle'},
         auth=SPARQL_AUTH,
-    ).raise_for_status()
+    )
+    response.raise_for_status()
+    logger.info("Upload complete (HTTP %d)", response.status_code)
 
 
 if __name__ == '__main__':
